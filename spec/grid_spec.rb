@@ -8,19 +8,25 @@ describe Grid do
 
 
 
-	it 'should have 81 cells' do
-		expect(grid.cells.length).to eq(81)
+		it 'should have 81 cells' do
+			expect(grid.cells.length).to eq(81)
+		end
+
+		it 'should have an unsolved first cell' do
+			expect(grid.cells.first).to eq(0)
+		end
+
+		it ' should have a solved second cell with value 1' do
+			expect(grid.cells[1]).to eq(1)
+		end
+
 	end
 
-	it 'should have an unsolved first cell' do
-		expect(grid.cells.first).to eq(0)
-	end
+	context 'solving sudoku' do
 
-	it ' should have a solved second cell with value 1' do
-		expect(grid.cells[1]).to eq(1)
-	end
+		it 'can solve the puzzle'do
+		
 
-		# expect("Anath").to give_up unless Anath.new.deliver MD
-
+		end
 	end
 end
