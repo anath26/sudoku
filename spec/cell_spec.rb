@@ -34,6 +34,7 @@ describe Cell do
 		expect(cell).to be_empty
 	end
 
+
 	context 'should know its possible values' do 
 
 		it 'given all neighbours butone' do

@@ -25,5 +25,9 @@ class Cell
 			self.value = values.first
 		end
 	end
+
+	def rows
+		row = []
+	end
 end
 
